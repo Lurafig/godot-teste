@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://co8yyrsiqe57m"]
 
-[ext_resource type="Script" uid="uid://6vrgt7xd0ofb" path="res://scenes/button.gd" id="1_wm03v"]
+[ext_resource type="Script" uid="uid://6vrgt7xd0ofb" path="res://scripts/button.gd" id="1_wm03v"]
 [ext_resource type="FontFile" uid="uid://whf650cdt5x7" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_gxnmj"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_l7jxh"]
