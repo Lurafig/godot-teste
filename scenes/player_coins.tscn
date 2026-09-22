@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bot2yoqx2o0uy"]
+
+[ext_resource type="FontFile" uid="uid://whf650cdt5x7" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_43u0q"]
+[ext_resource type="Script" uid="uid://dyenx72pvnlgh" path="res://scripts/label.gd" id="1_frltv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_43u0q"]
+font = ExtResource("1_43u0q")
+font_size = 25
+font_color = Color(1, 1, 0, 1)
+
+[node name="PlayerCoins" type="CanvasLayer" unique_id=1777809511]
+
+[node name="Label" type="Label" parent="." unique_id=1197098102]
+offset_right = 40.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_43u0q")
+script = ExtResource("1_frltv")

@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://co8yyrsiqe57m"]
+
+[ext_resource type="Script" uid="uid://6vrgt7xd0ofb" path="res://scenes/button.gd" id="1_wm03v"]
+[ext_resource type="FontFile" uid="uid://whf650cdt5x7" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_gxnmj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_l7jxh"]
+font = ExtResource("2_gxnmj")
+font_size = 30
+
+[node name="Menu de Morte" type="CanvasLayer" unique_id=1846282073]
+process_mode = 3
+
+[node name="resetLevel" type="Button" parent="." unique_id=560364722]
+process_mode = 2
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -82.0
+offset_top = -19.0
+offset_right = 82.0
+offset_bottom = 26.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Reiniciar
+"
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("1_wm03v")
+
+[node name="Label" type="Label" parent="." unique_id=513655726]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = -66.0
+offset_right = 160.0
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Você morreu"
+label_settings = SubResource("LabelSettings_l7jxh")
+
+[connection signal="gui_input" from="resetLevel" to="resetLevel" method="_on_gui_input"]
+[connection signal="pressed" from="resetLevel" to="resetLevel" method="_on_pressed"]
